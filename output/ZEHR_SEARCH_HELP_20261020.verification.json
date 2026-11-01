@@ -1,0 +1,19 @@
+{
+  "zip": "/Users/sunchaowei/Git/FileSystem/output/ZEHR_SEARCH_HELP_20261020.zip",
+  "zip_sha256": "33e47d2551d1c5ce79320b67d2cdd5d8758e4e89a1d125402a5cc052a5bdb54d",
+  "bytes": 82148,
+  "checks": [
+    "Source ZIP hashes match manifest",
+    "ZIP CRC, 106 entries, and abapGit root layout verified",
+    "All 73 XML files parse successfully",
+    "101 unchanged files match the original ZIP entries byte for byte",
+    "All 4 function groups have matching Include files and all 15 function definitions match their source metadata",
+    "All 9 selected core and gateway functions retain their original ABAP source",
+    "The extracted core has all 3 statically called FORM routines and no stale main-program Include references",
+    "No missing static custom DDIC references in the packaged XML",
+    "Original empty ABAP_TO_JSON implementation confirmed and documented"
+  ],
+  "sap_activation_verified": false,
+  "abapgit_import_verified": false,
+  "java_integration_verified": false
+}

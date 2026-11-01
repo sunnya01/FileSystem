@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD01V>
+    <DOMNAME>ZD_JXDJ</DOMNAME>
+    <DDLANGUAGE>1</DDLANGUAGE>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000002</LENG>
+    <OUTPUTLEN>000002</OUTPUTLEN>
+    <VALEXI>X</VALEXI>
+    <DDTEXT>绩效等级</DDTEXT>
+   </DD01V>
+   <DD07V_TAB>
+    <DD07V>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DOMVALUE_L>S</DOMVALUE_L>
+     <DDTEXT>S(卓越)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DOMVALUE_L>A</DOMVALUE_L>
+     <DDTEXT>A(优秀)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DOMVALUE_L>B</DOMVALUE_L>
+     <DDTEXT>B(良好)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DOMVALUE_L>C</DOMVALUE_L>
+     <DDTEXT>C(合格)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0005</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DOMVALUE_L>D</DOMVALUE_L>
+     <DDTEXT>D(不合格)</DDTEXT>
+    </DD07V>
+   </DD07V_TAB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

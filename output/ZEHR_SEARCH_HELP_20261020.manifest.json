@@ -1,0 +1,907 @@
+{
+  "scope": "SAP generic search-help core, existing Java RFC gateway, configuration maintenance and recursive custom dependencies",
+  "kept_original_object_names": true,
+  "functions_in_zehr_fg_comm": [
+    "ZFM_EHR_ABAP_TO_JSON",
+    "ZFM_EHR_COMM_SEARCH_HELP",
+    "ZFM_EHR_GET_FUNC_INFO",
+    "ZFM_EHR_GET_SHLP_FR_DOMAIN",
+    "ZFM_EHR_GET_SHLP_FR_SHLP",
+    "ZFM_EHR_GET_SHLP_FR_SUBTY",
+    "ZFM_EHR_GET_SHLP_FR_TABLE",
+    "ZFM_EHR_IF_COM",
+    "ZFM_EHR_JSON_TO_ABAP"
+  ],
+  "source_archives": [
+    {
+      "path": "/Users/sunchaowei/Git/ProjHistory/SAP项目经历/华友项目/开发程序/HuaYou/NEW/ZEHR_20260608_155344.zip",
+      "sha256": "49b630ec65b62b8f96efde9cf870fc8400f0daa3d494e5642222b3941fa1ac6b"
+    },
+    {
+      "path": "/Users/sunchaowei/Git/ProjHistory/SAP项目经历/华友项目/开发程序/HuaYou/NEW/ZHR002_20260106_195330.zip",
+      "sha256": "a3f5b837badedf0d72e7e8eb315dea54c67acc38f10084b181be11755982bdc8"
+    }
+  ],
+  "file_count": 106,
+  "objects": [
+    {
+      "name": "ZDE_SHHIDTABNAME",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZDHRPKIND",
+      "type": "DOMA"
+    },
+    {
+      "name": "ZDHRZZHLP",
+      "type": "DOMA"
+    },
+    {
+      "name": "ZDHRZZSHP",
+      "type": "DOMA"
+    },
+    {
+      "name": "ZD_JXDJ",
+      "type": "DOMA"
+    },
+    {
+      "name": "ZEHRPKIND",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHRPNAME",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHRSHHID",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHRSHHNA",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHRUSER",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHRVALUE",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHRVER",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHRZCOND",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHRZDKEY",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHRZFKEY",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHRZFTXT",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHRZSORT",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHRZZHLP",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHRZZNAM",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHRZZSHP",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHR_F4HELP",
+      "type": "TRAN"
+    },
+    {
+      "name": "ZEHR_FG_COMM",
+      "type": "FUGR"
+    },
+    {
+      "name": "ZEHR_INTERFACE",
+      "type": "TRAN"
+    },
+    {
+      "name": "ZEHR_KEY",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZEHR_VALUE",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZE_EHR_GUID",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZE_EHR_IFDEC",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZE_EHR_IFLOG",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZE_EHR_IFMRK",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZE_EHR_IFNUM",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZE_EHR_TAB",
+      "type": "DTEL"
+    },
+    {
+      "name": "ZHRBC_T0005",
+      "type": "TABL"
+    },
+    {
+      "name": "ZMSG_01",
+      "type": "MSAG"
+    },
+    {
+      "name": "ZSEHR_FUC_PARAMS",
+      "type": "TABL"
+    },
+    {
+      "name": "ZSEHR_MESSAGE",
+      "type": "TABL"
+    },
+    {
+      "name": "ZSHR_F4_CONDITION",
+      "type": "TABL"
+    },
+    {
+      "name": "ZSHR_F4_TAB",
+      "type": "TABL"
+    },
+    {
+      "name": "ZSHR_PARAM",
+      "type": "TABL"
+    },
+    {
+      "name": "ZSHR_PARAMS",
+      "type": "TABL"
+    },
+    {
+      "name": "ZSHR_SHH_HEAD",
+      "type": "TABL"
+    },
+    {
+      "name": "ZTEHR0001",
+      "type": "FUGR"
+    },
+    {
+      "name": "ZTEHR0001",
+      "type": "TABL"
+    },
+    {
+      "name": "ZTEHR0003",
+      "type": "TABL"
+    },
+    {
+      "name": "ZTEHR_IFLOG",
+      "type": "TABL"
+    },
+    {
+      "name": "ZTHR0015",
+      "type": "TABL"
+    },
+    {
+      "name": "ZTHR0015D",
+      "type": "FUGR"
+    },
+    {
+      "name": "ZTHR0015D",
+      "type": "TABL"
+    },
+    {
+      "name": "ZTHR0015D",
+      "type": "TOBJ"
+    },
+    {
+      "name": "ZTHR0015T",
+      "type": "TABL"
+    },
+    {
+      "name": "ZTHR_F4_TAB",
+      "type": "TTYP"
+    },
+    {
+      "name": "ZTHR_PARAM",
+      "type": "TTYP"
+    },
+    {
+      "name": "ZVHR0015",
+      "type": "FUGR"
+    },
+    {
+      "name": "ZVHR0015",
+      "type": "TOBJ"
+    },
+    {
+      "name": "ZVHR0015",
+      "type": "VIEW"
+    }
+  ],
+  "source_file_counts": {
+    "ZEHR_20260608_155344.zip": 57,
+    "ZHR002_20260106_195330.zip": 49
+  },
+  "unresolved_static_custom_names": [],
+  "runtime_requirements": [
+    "SAP HR and the SAP standard DDIC objects and function modules used by the source",
+    "/UI2/CL_JSON for the existing JSON_TO_ABAP implementation",
+    "ZTHR0015 and ZTHR0015T configuration rows, plus ZTEHR0001 IFNUM to IFNAM mapping",
+    "Objects and functions named dynamically by the actual search-help configuration",
+    "ZEHR_IFLOG number range object and interval 01 when IFLOG is enabled"
+  ],
+  "known_source_limitations": [
+    "The exported ZFM_EHR_ABAP_TO_JSON has no active serialization implementation; it is preserved unchanged.",
+    "No configuration table data is supplied by the source exports.",
+    "The selected function group retains its original name; review conflicts with an existing ZEHR_FG_COMM before import."
+  ],
+  "files": {
+    ".abapgit.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": ".abapgit.xml",
+      "operation": "copied unchanged",
+      "sha256": "fab87b51554b1bc131978ce865936c47042cfb36f81ad3dbc036c4b8dfefedd9"
+    },
+    "src/package.devc.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/package.devc.xml",
+      "operation": "copied unchanged",
+      "sha256": "3e76674131add136eb412ef8fd67644d6991205f5381de89983779ac86b9bb89"
+    },
+    "src/zd_jxdj.doma.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zd_jxdj.doma.xml",
+      "operation": "copied unchanged",
+      "sha256": "d65b5aa4847795404f24217fed75c8b6d613f814f97277b3791d573ede193df4"
+    },
+    "src/zde_shhidtabname.dtel.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zde_shhidtabname.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "845a22dc434503757c4101d3f7d36cfb9457b09bc30a22782dd3ec1eb783ba82"
+    },
+    "src/zdhrpkind.doma.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zdhrpkind.doma.xml",
+      "operation": "copied unchanged",
+      "sha256": "6adc5310000d79fb619a5f969966b43c79e3bd34748912dd7889bd3f772e1abe"
+    },
+    "src/zdhrzzhlp.doma.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zdhrzzhlp.doma.xml",
+      "operation": "copied unchanged",
+      "sha256": "2d38693e0119d1c429677ba67db00e79c4c07cc61402a10db0b33cffa83336fe"
+    },
+    "src/zdhrzzshp.doma.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zdhrzzshp.doma.xml",
+      "operation": "copied unchanged",
+      "sha256": "69d3e48eb3de7f2ca7089ba9b5ade28ecf553a0888d5f7303e9eaa5881287bf7"
+    },
+    "src/ze_ehr_guid.dtel.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ze_ehr_guid.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "bd80fc8393be296f85172e934a686ac0cc5ba0f1c415554df69b98e6202281a2"
+    },
+    "src/ze_ehr_ifdec.dtel.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ze_ehr_ifdec.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "e1acb9232308183f101127f54d40597760d1564673e0720f8749a48db58dc0f7"
+    },
+    "src/ze_ehr_iflog.dtel.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ze_ehr_iflog.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "67e206aa983514effdb1d100506743c287fc93c6d986cb4d88a3f0413a9b36d4"
+    },
+    "src/ze_ehr_ifmrk.dtel.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ze_ehr_ifmrk.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "b5789f6e56e54f3a46a2af1ec7ba87464dcd635b7fc73a73d40933399c08a50e"
+    },
+    "src/ze_ehr_ifnum.dtel.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ze_ehr_ifnum.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "58ab7777e773a029e986b557f687427a856825a96039bdc935de45451755c7b9"
+    },
+    "src/ze_ehr_tab.dtel.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ze_ehr_tab.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "30dbba89cf219b48518d4dea6a527664fc8b81f300c1fde7f32409555b44205f"
+    },
+    "src/zehr_f4help.tran.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_f4help.tran.xml",
+      "operation": "copied unchanged",
+      "sha256": "11da457c19d2a8af9df70b516200d9a51e66ed8721a27a90e6e9b41e7371a673"
+    },
+    "src/zehr_fg_comm.fugr.lzehr_fg_commf01.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.lzehr_fg_commf01.abap",
+      "operation": "retained the two search-help FORM routines only",
+      "sha256": "e3ffe54d565959d93a0b6b3cd57aee6ddcf8be4926c5594cfc5904f97049c01c",
+      "source_lines": [
+        1,
+        61
+      ]
+    },
+    "src/zehr_fg_comm.fugr.lzehr_fg_commf01.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.lzehr_fg_commf01.xml",
+      "operation": "copied unchanged",
+      "sha256": "7a470c92154544b095c3c26c0ebb1d040c46d0f6d2b218cae8890fbcc6acb3ba"
+    },
+    "src/zehr_fg_comm.fugr.lzehr_fg_commf02.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.lzehr_fg_commf02.abap",
+      "operation": "copied unchanged",
+      "sha256": "84597782fe3a30b088e7159f9fb279a5508ec66538aad85422388eaea304df6f"
+    },
+    "src/zehr_fg_comm.fugr.lzehr_fg_commf02.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.lzehr_fg_commf02.xml",
+      "operation": "copied unchanged",
+      "sha256": "207691351a6b9717bb404cd61ba6c03e7f78ccf8fec17eb722494fd9b4e6a908"
+    },
+    "src/zehr_fg_comm.fugr.lzehr_fg_commtop.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.lzehr_fg_commtop.abap",
+      "operation": "retained FUNCTION-POOL declaration; removed unused globals",
+      "sha256": "1da3f3bb5bbbaa8b5cf53637f50776bc2e03d9f418ce1e572ae251acdaed818b",
+      "source_lines": [
+        1,
+        1
+      ]
+    },
+    "src/zehr_fg_comm.fugr.lzehr_fg_commtop.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.lzehr_fg_commtop.xml",
+      "operation": "copied unchanged",
+      "sha256": "d200add95d15ffcb6f5d7417c0493a4be3fbe89da6657769ab6ca396ed76243b"
+    },
+    "src/zehr_fg_comm.fugr.saplzehr_fg_comm.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.saplzehr_fg_comm.abap",
+      "operation": "retained only the includes required by the selected functions",
+      "sha256": "6546ec95e716b6c8d69165c875b2adece7bf7ac24350224ba1ebf8487a4ca4b9"
+    },
+    "src/zehr_fg_comm.fugr.saplzehr_fg_comm.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.saplzehr_fg_comm.xml",
+      "operation": "removed unused email text pool",
+      "sha256": "7b74a34a863e1476a3bf66652ad78664311541cf174459cdc6324d488d36e793"
+    },
+    "src/zehr_fg_comm.fugr.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.xml",
+      "operation": "retained nine function definitions and four includes",
+      "sha256": "39576e6ce1c67a15833fa505483cd58db008d17b6ee7d629878def9158b2ef15"
+    },
+    "src/zehr_fg_comm.fugr.zfm_ehr_abap_to_json.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.zfm_ehr_abap_to_json.abap",
+      "operation": "copied unchanged",
+      "sha256": "6d79116169cccdbaa8d4f4f48745aacdb2bf0c3b922f8a9f67b482e0f174fd72"
+    },
+    "src/zehr_fg_comm.fugr.zfm_ehr_comm_search_help.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.zfm_ehr_comm_search_help.abap",
+      "operation": "copied unchanged",
+      "sha256": "480c8548968163be73598838a4b6ee75c06c6e4245fd4615a742d66206aba6be"
+    },
+    "src/zehr_fg_comm.fugr.zfm_ehr_get_func_info.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.zfm_ehr_get_func_info.abap",
+      "operation": "copied unchanged",
+      "sha256": "fa267cacbb44be69c6abd3c3d655becd79bba70279912698031479b4dac10aad"
+    },
+    "src/zehr_fg_comm.fugr.zfm_ehr_get_shlp_fr_domain.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.zfm_ehr_get_shlp_fr_domain.abap",
+      "operation": "copied unchanged",
+      "sha256": "9ab37ff5466aee93ca1fe3553b089d88e33cbf628060c3eab23898699aaf42de"
+    },
+    "src/zehr_fg_comm.fugr.zfm_ehr_get_shlp_fr_shlp.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.zfm_ehr_get_shlp_fr_shlp.abap",
+      "operation": "copied unchanged",
+      "sha256": "624e75fee6de15b5d8dc1c08a8ae19752d49e52a6d6908652f4a960ef7913289"
+    },
+    "src/zehr_fg_comm.fugr.zfm_ehr_get_shlp_fr_subty.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.zfm_ehr_get_shlp_fr_subty.abap",
+      "operation": "copied unchanged",
+      "sha256": "ca83191f4d85db212d7fdc62eea8779fc7307326a945138cbcbff737b8c07c10"
+    },
+    "src/zehr_fg_comm.fugr.zfm_ehr_get_shlp_fr_table.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.zfm_ehr_get_shlp_fr_table.abap",
+      "operation": "copied unchanged",
+      "sha256": "82c0e208b06687cdf445321936cb1be16b2300509bcecf389dddd68ca46cfadf"
+    },
+    "src/zehr_fg_comm.fugr.zfm_ehr_if_com.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.zfm_ehr_if_com.abap",
+      "operation": "copied unchanged",
+      "sha256": "aece118e9fee12d7bba4c7ec8a8f8e829da4942299033d57e9b5ab53887d459b"
+    },
+    "src/zehr_fg_comm.fugr.zfm_ehr_json_to_abap.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_fg_comm.fugr.zfm_ehr_json_to_abap.abap",
+      "operation": "copied unchanged",
+      "sha256": "06b3e17b693ce3c52ea15f47895f8a55dff0e977bf8f79ef732afd3c6bcc9fec"
+    },
+    "src/zehr_interface.tran.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_interface.tran.xml",
+      "operation": "copied unchanged",
+      "sha256": "3a9e5682bf687131b4cf5d2d7867d86c5c5eaa6e354b60ef1297e44a4de205a6"
+    },
+    "src/zehr_key.dtel.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehr_key.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "db2bbd810fe1d8ea7914f193467d1edfae7e57893b896c3b3b3d1e3e29ae41c9"
+    },
+    "src/zehr_value.dtel.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zehr_value.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "8ce5ed4987e8d15739d6f072b239f0075e7fda9f14c8af30717b67254afd59eb"
+    },
+    "src/zehrpkind.dtel.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehrpkind.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "14295f1f0251b624602b01c33c391f6bef54084cfb42e5269451c7d6bfa0714c"
+    },
+    "src/zehrpname.dtel.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehrpname.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "7dc3b780dd035b0796795afcb4003c08c3e5f435a19f44f72f4bd9c9b2c6f2c6"
+    },
+    "src/zehrshhid.dtel.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zehrshhid.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "04c26b22ab7e498557cb5e97ae9b7a1dccadfcb2b4f625ab559d0f0689233005"
+    },
+    "src/zehrshhna.dtel.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zehrshhna.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "ef43efcc0d499864e66959459864cbb7b2fa38f2b7e85b65d5c5d6818685c508"
+    },
+    "src/zehruser.dtel.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehruser.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "ce57475dabef88af6c9c271dfa8d45134c51047cd60ac82cd3e445a36b9a8dae"
+    },
+    "src/zehrvalue.dtel.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehrvalue.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "90b0ef827c466c81158929617f84a5102af05f1ec06d92d991443b57e776c457"
+    },
+    "src/zehrver.dtel.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zehrver.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "bc2edcc6c8726777a806a87c1ced54903b1509e2413c0f774f9f11c222ddf380"
+    },
+    "src/zehrzcond.dtel.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zehrzcond.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "e4ab83868ff2d80716b31276effd2d41d3785b1484fe0d604dcebf3dd9b929cc"
+    },
+    "src/zehrzdkey.dtel.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zehrzdkey.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "3f4da982e41346de6e30ba890b967b6ca78f9b4148e4478d30f3266846676400"
+    },
+    "src/zehrzfkey.dtel.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zehrzfkey.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "6be5072d3ea72abd073fb37f4435fb886ee7d6b185f98fc33bd4f6e93bb25917"
+    },
+    "src/zehrzftxt.dtel.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zehrzftxt.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "36a7945fa1d3e6b9858b9ac1b8b6ff23457b8ad4eb6a0fa1f47e2b22a68ab4c5"
+    },
+    "src/zehrzsort.dtel.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zehrzsort.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "fb7dd26edf03f417ff424617627e9e446538ad4769ef9fecaa60b843843950d7"
+    },
+    "src/zehrzzhlp.dtel.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zehrzzhlp.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "41d1fa8d27ad41427a476ae63bdf41964de702b6d1b9b22f6d0b025038b50f62"
+    },
+    "src/zehrzznam.dtel.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zehrzznam.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "ff8a0de30de61d9e86d0926f32d7d2f6be3abd48c9ab22e2d21eae990a1356ec"
+    },
+    "src/zehrzzshp.dtel.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zehrzzshp.dtel.xml",
+      "operation": "copied unchanged",
+      "sha256": "b13f5b5a6ca247a423934b24d25b05d087c40837e5e12482a1ec3c0b796d0434"
+    },
+    "src/zhrbc_t0005.tabl.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zhrbc_t0005.tabl.xml",
+      "operation": "copied unchanged",
+      "sha256": "8bfd5b69312bbf165fbdd99a521d17f58f4dbad56f58b8b02b822cefe249203f"
+    },
+    "src/zmsg_01.msag.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zmsg_01.msag.xml",
+      "operation": "copied unchanged",
+      "sha256": "d870097f5eecedec517a7408971b94f852f1e9c67513b827557dbcb91c98e834"
+    },
+    "src/zsehr_fuc_params.tabl.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zsehr_fuc_params.tabl.xml",
+      "operation": "copied unchanged",
+      "sha256": "e09faff8d9831e96071ac85195644364894165781036e65644734ce6d4abf55e"
+    },
+    "src/zsehr_message.tabl.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zsehr_message.tabl.xml",
+      "operation": "copied unchanged",
+      "sha256": "9189e8214850aa069b749a982625c033f7619d32d1924d45842ef967cba0131d"
+    },
+    "src/zshr_f4_condition.tabl.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zshr_f4_condition.tabl.xml",
+      "operation": "copied unchanged",
+      "sha256": "7a07e42b21b7e3333914ce0fe895a06e1ea96c4f0b5756881956d8a396a03c1e"
+    },
+    "src/zshr_f4_tab.tabl.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zshr_f4_tab.tabl.xml",
+      "operation": "copied unchanged",
+      "sha256": "641c411e56c7bde144a2e1ffd748453defff7bb26eca163e902a2c63db9ff532"
+    },
+    "src/zshr_param.tabl.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zshr_param.tabl.xml",
+      "operation": "copied unchanged",
+      "sha256": "eca56dce3b49e6e1c196de3cc3cf26e8c7e0b4021c18b5fc32d3e7de121172ba"
+    },
+    "src/zshr_params.tabl.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zshr_params.tabl.xml",
+      "operation": "copied unchanged",
+      "sha256": "b09f1d837fb1b919a4e768c33a6ecf4f3d1645f332f563721d5b22bf3a99c8c8"
+    },
+    "src/zshr_shh_head.tabl.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zshr_shh_head.tabl.xml",
+      "operation": "copied unchanged",
+      "sha256": "1d2bf9369a26891cdec73423f5fe57fb6cf4f8e0a2d09a9a179221c734d5922a"
+    },
+    "src/ztehr0001.fugr.lztehr0001t00.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ztehr0001.fugr.lztehr0001t00.abap",
+      "operation": "copied unchanged",
+      "sha256": "0080de5b4c65d0fd7215641e59f13b67461d9fc08a9ade6142fd16f260037152"
+    },
+    "src/ztehr0001.fugr.lztehr0001t00.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ztehr0001.fugr.lztehr0001t00.xml",
+      "operation": "copied unchanged",
+      "sha256": "e54d209c5496a633a9854bbf6c58d37d1d5d367c7ccea28291f712b69f845a1f"
+    },
+    "src/ztehr0001.fugr.saplztehr0001.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ztehr0001.fugr.saplztehr0001.abap",
+      "operation": "copied unchanged",
+      "sha256": "de4adadf3dbe044d907474db5d08447d227eaab20a4e36ac4eab7dfba005ec69"
+    },
+    "src/ztehr0001.fugr.saplztehr0001.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ztehr0001.fugr.saplztehr0001.xml",
+      "operation": "copied unchanged",
+      "sha256": "765ac092f192d00f0c4208f837cfe4e81ce18c5cf68fe2c411ad287a6d62654b"
+    },
+    "src/ztehr0001.fugr.screen_9000.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ztehr0001.fugr.screen_9000.abap",
+      "operation": "copied unchanged",
+      "sha256": "dd20a1f4e76000193a4a702b7d518591a9c09e03a6e3f3dc9f8b6f816beb4d96"
+    },
+    "src/ztehr0001.fugr.tableframe_ztehr0001.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ztehr0001.fugr.tableframe_ztehr0001.abap",
+      "operation": "copied unchanged",
+      "sha256": "e76f57a9e67b404c611b3c9d2d3d6b3c60168c34f7d4ea0afa890ca006ca9db6"
+    },
+    "src/ztehr0001.fugr.tableproc_ztehr0001.abap": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ztehr0001.fugr.tableproc_ztehr0001.abap",
+      "operation": "copied unchanged",
+      "sha256": "98b3c20388f512ed2bb4128f37fbb3cfd972a78d2dee9f908366d9b56b3a64ff"
+    },
+    "src/ztehr0001.fugr.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ztehr0001.fugr.xml",
+      "operation": "copied unchanged",
+      "sha256": "413dbbd384c5aed21ee7f265e218e4392161fbfeeb3bb39d6997a958adac3393"
+    },
+    "src/ztehr0001.tabl.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ztehr0001.tabl.xml",
+      "operation": "copied unchanged",
+      "sha256": "cbd84a1b1d915de204d1f3420a5f63cad6e82e2eb812e54f68356eb5038b5df3"
+    },
+    "src/ztehr0003.tabl.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ztehr0003.tabl.xml",
+      "operation": "copied unchanged",
+      "sha256": "9f562a08bad9ae054c11465165fde829a2b0e5f474574b320b273bf4a5a57bfd"
+    },
+    "src/ztehr_iflog.tabl.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/ztehr_iflog.tabl.xml",
+      "operation": "copied unchanged",
+      "sha256": "868ce509c0f71bdb8c0688c72244dc44e25e5ac30d98646a613d5bf606ac7fe5"
+    },
+    "src/zthr0015.tabl.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015.tabl.xml",
+      "operation": "copied unchanged",
+      "sha256": "fb39349abc80f1b63041bf7e559147e7fafa5dd3ab1984e61c5d2aad2f2f3581"
+    },
+    "src/zthr0015d s.tobj.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d s.tobj.xml",
+      "operation": "copied unchanged",
+      "sha256": "512f5aa8f7ae830b5b4da0c5dcba9b3dbda6ad9577885587f695c2caecf57c6f"
+    },
+    "src/zthr0015d.fugr.lzthr0015df00.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d.fugr.lzthr0015df00.abap",
+      "operation": "copied unchanged",
+      "sha256": "fdd75c4415f15df1723e6524b8308eef3ef561b3c49dcec929b8dfaaef799ab9"
+    },
+    "src/zthr0015d.fugr.lzthr0015df00.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d.fugr.lzthr0015df00.xml",
+      "operation": "copied unchanged",
+      "sha256": "5b120637e0c1f5071d626bf1bbd77e0f5e62d973ff749b36552444af54e0643b"
+    },
+    "src/zthr0015d.fugr.lzthr0015di00.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d.fugr.lzthr0015di00.abap",
+      "operation": "copied unchanged",
+      "sha256": "4ed1218f2032fdd974fd1bb26d20223cce6e0783e2f8da57707d3ea5a156ad28"
+    },
+    "src/zthr0015d.fugr.lzthr0015di00.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d.fugr.lzthr0015di00.xml",
+      "operation": "copied unchanged",
+      "sha256": "56e09a0356576dd0ad1ff43f357402e2f7ef499acdcae4a7be416cb0364cf319"
+    },
+    "src/zthr0015d.fugr.lzthr0015dt00.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d.fugr.lzthr0015dt00.abap",
+      "operation": "copied unchanged",
+      "sha256": "e5e1613cbbe0dccf09651819a4f0dbb1c9644888e4c893fc3366dc2065e8fb16"
+    },
+    "src/zthr0015d.fugr.lzthr0015dt00.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d.fugr.lzthr0015dt00.xml",
+      "operation": "copied unchanged",
+      "sha256": "bcf376d03a515b41d0c16bb0bd3e1833882ff5bd69710bdb965c851a7dd72846"
+    },
+    "src/zthr0015d.fugr.lzthr0015dtop.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d.fugr.lzthr0015dtop.abap",
+      "operation": "copied unchanged",
+      "sha256": "47acd96cea998b80cf12d1a7c769645f5e5cdee571a0be94041b27956b517c82"
+    },
+    "src/zthr0015d.fugr.lzthr0015dtop.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d.fugr.lzthr0015dtop.xml",
+      "operation": "copied unchanged",
+      "sha256": "6d1a8ae4cb891e1f893fe286a09fe13e20cf7737bd1bcc67a20685eb1a9d27af"
+    },
+    "src/zthr0015d.fugr.saplzthr0015d.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d.fugr.saplzthr0015d.abap",
+      "operation": "copied unchanged",
+      "sha256": "ea7a5cbf3b2266bc66e1d48db6b427285f7b6f2bd569f30ffda9265ff4af22b9"
+    },
+    "src/zthr0015d.fugr.saplzthr0015d.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d.fugr.saplzthr0015d.xml",
+      "operation": "copied unchanged",
+      "sha256": "8ba95ab9fd200229045ba3b8abc08498e2d84535aee88f918bb276ceedad8856"
+    },
+    "src/zthr0015d.fugr.tableframe_zthr0015d.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d.fugr.tableframe_zthr0015d.abap",
+      "operation": "copied unchanged",
+      "sha256": "ac040f88c3dbdf32d77702d67605663d9a0ad969fbac7bcf8b833d659b935cde"
+    },
+    "src/zthr0015d.fugr.tableproc_zthr0015d.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d.fugr.tableproc_zthr0015d.abap",
+      "operation": "copied unchanged",
+      "sha256": "88620327ab4311ff8441dc005cb1456525349ae191c4b064a28093f35ac0e336"
+    },
+    "src/zthr0015d.fugr.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d.fugr.xml",
+      "operation": "copied unchanged",
+      "sha256": "2d38ff68633c6dca9a78b9716987cb911dde09277d38d44b6f8a41e0e3657395"
+    },
+    "src/zthr0015d.tabl.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015d.tabl.xml",
+      "operation": "copied unchanged",
+      "sha256": "4707d931256da2c5f85edced4bd6d3145197f7792e1501eef477d6eef91aa8f7"
+    },
+    "src/zthr0015t.tabl.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zthr0015t.tabl.xml",
+      "operation": "copied unchanged",
+      "sha256": "120e49ffb5aae7a77f5dacb197ab18f019d82a89f0d8ab901147b084456639e0"
+    },
+    "src/zthr_f4_tab.ttyp.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zthr_f4_tab.ttyp.xml",
+      "operation": "copied unchanged",
+      "sha256": "7a30779f5bfd81e1027a1f12cae443811b6859d679dd4839ba8f7e7a7fab12f4"
+    },
+    "src/zthr_param.ttyp.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zthr_param.ttyp.xml",
+      "operation": "copied unchanged",
+      "sha256": "45f5c0fdd119c668bc118c88976e1f47b735a082c40c57c3983665063ed972e6"
+    },
+    "src/zvhr0015  v.tobj.xml": {
+      "source_archive": "ZEHR_20260608_155344.zip",
+      "source_entry": "src/zvhr0015  v.tobj.xml",
+      "operation": "copied unchanged",
+      "sha256": "46a711c357f91a98d5c84c58f6d77bd4cceac4808d2494279ec109f5aa7b61e0"
+    },
+    "src/zvhr0015.fugr.lzvhr0015f00.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.lzvhr0015f00.abap",
+      "operation": "copied unchanged",
+      "sha256": "7aef574dfc4e051da9dcc7a705cdad782eb17fe1d3f4165f0ef2be2575cf44c8"
+    },
+    "src/zvhr0015.fugr.lzvhr0015f00.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.lzvhr0015f00.xml",
+      "operation": "copied unchanged",
+      "sha256": "6f3c2eb922d246a05801a489a29847206922009f11e3311dc5a3a68f50b5f763"
+    },
+    "src/zvhr0015.fugr.lzvhr0015i00.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.lzvhr0015i00.abap",
+      "operation": "copied unchanged",
+      "sha256": "e40abd49a625dbb5b9f30c70a20f54558625c2142267146a9c4c9e6b70eaff78"
+    },
+    "src/zvhr0015.fugr.lzvhr0015i00.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.lzvhr0015i00.xml",
+      "operation": "copied unchanged",
+      "sha256": "d9fe8429050dbdf9b69cde543e0d23fcac1283dffd7fbdd449783a4746b4e88f"
+    },
+    "src/zvhr0015.fugr.lzvhr0015i01.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.lzvhr0015i01.abap",
+      "operation": "copied unchanged",
+      "sha256": "a879ccf8049e9df208a4fd2b7524517dcf9950eeae1132ffb6e7915d0c1231fb"
+    },
+    "src/zvhr0015.fugr.lzvhr0015i01.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.lzvhr0015i01.xml",
+      "operation": "copied unchanged",
+      "sha256": "efb9dc36e2234edf548e6cac3c2b9fe6c7c126d5c9764d4cb447698d02ee3c60"
+    },
+    "src/zvhr0015.fugr.lzvhr0015t00.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.lzvhr0015t00.abap",
+      "operation": "copied unchanged",
+      "sha256": "ec313ee929a78d45eed184b94913810c354eeb0fc00d4afe5887a593954c8b6b"
+    },
+    "src/zvhr0015.fugr.lzvhr0015t00.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.lzvhr0015t00.xml",
+      "operation": "copied unchanged",
+      "sha256": "4ad1bbd74a6b4d9bd6877c377f4a184acdba8e2c4d3f09b42f26a742b879ce6f"
+    },
+    "src/zvhr0015.fugr.lzvhr0015top.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.lzvhr0015top.abap",
+      "operation": "copied unchanged",
+      "sha256": "7a577cb351a6bf849a95c4ae5dbf900600265bba82df5b1136f4c10e635c5615"
+    },
+    "src/zvhr0015.fugr.lzvhr0015top.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.lzvhr0015top.xml",
+      "operation": "copied unchanged",
+      "sha256": "81957315e55c184df734f3c933a133a6a1f4d3e0f280c961762eb97e21683171"
+    },
+    "src/zvhr0015.fugr.saplzvhr0015.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.saplzvhr0015.abap",
+      "operation": "copied unchanged",
+      "sha256": "31d9ee845d7b2715f846f3837d8bc6dcab3fc2ee67c8f9f9a4da34d762f3818f"
+    },
+    "src/zvhr0015.fugr.saplzvhr0015.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.saplzvhr0015.xml",
+      "operation": "copied unchanged",
+      "sha256": "1299718d21a826c51b1744dbdebab0f332b183a6dadd568a08c29d46c82d7a73"
+    },
+    "src/zvhr0015.fugr.viewframe_zvhr0015.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.viewframe_zvhr0015.abap",
+      "operation": "copied unchanged",
+      "sha256": "c54ac3e48d594d1aff3da536518e357a34210669319b133b73eba313e0d177a1"
+    },
+    "src/zvhr0015.fugr.viewproc_zvhr0015.abap": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.viewproc_zvhr0015.abap",
+      "operation": "copied unchanged",
+      "sha256": "553496f09644b2c5705c4108df9245ba22f63073aff40b9b39b35a9b579ecac5"
+    },
+    "src/zvhr0015.fugr.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.fugr.xml",
+      "operation": "copied unchanged",
+      "sha256": "c51d330cce397ee1f00d35f0aa33a85460d45b4db39266c4c3a18511de5d0f09"
+    },
+    "src/zvhr0015.view.xml": {
+      "source_archive": "ZHR002_20260106_195330.zip",
+      "source_entry": "src/zvhr0015.view.xml",
+      "operation": "copied unchanged",
+      "sha256": "bffcd27f730d76a2ccc3e60d403722a47eaa82e2cbc640b5e099691a00dcedda"
+    }
+  }
+}

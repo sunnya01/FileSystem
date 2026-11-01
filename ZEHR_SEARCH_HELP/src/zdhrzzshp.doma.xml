@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD01V>
+    <DOMNAME>ZDHRZZSHP</DOMNAME>
+    <DDLANGUAGE>1</DDLANGUAGE>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000001</LENG>
+    <OUTPUTLEN>000001</OUTPUTLEN>
+    <VALEXI>X</VALEXI>
+    <DDTEXT>搜索帮助形式</DDTEXT>
+   </DD01V>
+   <DD07V_TAB>
+    <DD07V>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DOMVALUE_L>P</DOMVALUE_L>
+     <DDTEXT>弹出</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DOMVALUE_L>D</DOMVALUE_L>
+     <DDTEXT>下拉</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DOMVALUE_L>T</DOMVALUE_L>
+     <DDTEXT>树形(检查权限)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DOMVALUE_L>S</DOMVALUE_L>
+     <DDTEXT>人员搜索(检查权限)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0005</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DOMVALUE_L>L</DOMVALUE_L>
+     <DDTEXT>长文本</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0006</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DOMVALUE_L>Z</DOMVALUE_L>
+     <DDTEXT>人员权限(不检查权限)</DDTEXT>
+    </DD07V>
+   </DD07V_TAB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
